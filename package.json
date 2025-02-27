@@ -1,0 +1,12 @@
+{
+  "name": "gobatch-doc",
+  "version": "1.0.0",
+  "description": "GoBatch Documentation",
+  "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build"
+  },
+  "devDependencies": {
+    "honkit": "^4.0.0"
+  }
+}
