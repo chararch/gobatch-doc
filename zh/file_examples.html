@@ -1,0 +1,992 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>文件处理示例 · GoBatch Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="contribution_guide.html" />
+    
+    
+    <link rel="prev" href="usage_examples.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    中文文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="quick_start.html">
+            
+                <a href="quick_start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="job.html">
+            
+                <a href="job.html">
+            
+                    
+                    任务介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="step.html">
+            
+                <a href="step.html">
+            
+                    
+                    Step介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="dependencies.html">
+            
+                <a href="dependencies.html">
+            
+                    
+                    依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="usage_examples.html">
+            
+                <a href="usage_examples.html">
+            
+                    
+                    一个简单示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="file_examples.html">
+            
+                <a href="file_examples.html">
+            
+                    
+                    文件处理示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="contribution_guide.html">
+            
+                <a href="contribution_guide.html">
+            
+                    
+                    贡献指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    问题反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    English Documentation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../en/introduction.html">
+            
+                <a href="../en/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../en/quick_start.html">
+            
+                <a href="../en/quick_start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../en/basics.html">
+            
+                <a href="../en/basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../en/architecture.html">
+            
+                <a href="../en/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../en/job.html">
+            
+                <a href="../en/job.html">
+            
+                    
+                    Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../en/step.html">
+            
+                <a href="../en/step.html">
+            
+                    
+                    Step
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../en/dependencies.html">
+            
+                <a href="../en/dependencies.html">
+            
+                    
+                    Dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../en/configuration.html">
+            
+                <a href="../en/configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../en/usage_examples.html">
+            
+                <a href="../en/usage_examples.html">
+            
+                    
+                    A Simple Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../en/file_examples.html">
+            
+                <a href="../en/file_examples.html">
+            
+                    
+                    File Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../en/contribution_guide.html">
+            
+                <a href="../en/contribution_guide.html">
+            
+                    
+                    Contribution Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../en/feedback.html">
+            
+                <a href="../en/feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >文件处理示例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9AD8;&#x7EA7;&#x4F7F;&#x7528;&#x793A;&#x4F8B;">&#x9AD8;&#x7EA7;&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h1>
+<p>&#x672C;&#x6307;&#x5357;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x8D37;&#x6B3E;&#x5904;&#x7406;&#x793A;&#x4F8B;&#x6F14;&#x793A;GoBatch&#x7684;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#x3002;&#x5B8C;&#x6574;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728;<a href="https://github.com/chararch/gobatch-example/file_usage" target="_blank">gobatch-example/file_usage</a>&#x76EE;&#x5F55;&#x4E0B;&#x627E;&#x5230;&#x3002;</p>
+<h2 id="&#x4EFB;&#x52A1;&#x529F;&#x80FD;&#x6982;&#x8FF0;">&#x4EFB;&#x52A1;&#x529F;&#x80FD;&#x6982;&#x8FF0;</h2>
+<p>&#x672C;&#x793A;&#x4F8B;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x8D37;&#x6B3E;&#x5904;&#x7406;&#x6279;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x4ECE;TSV&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x8D37;&#x6B3E;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x5230;&#x6570;&#x636E;&#x5E93;&#x8868;</li>
+<li>&#x57FA;&#x4E8E;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x751F;&#x6210;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;</li>
+<li>&#x7EDF;&#x8BA1;&#x6C47;&#x603B;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#x6570;&#x636E;&#x5E76;&#x751F;&#x6210;CSV&#x6587;&#x4EF6;</li>
+<li>&#x5C06;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;FTP&#x670D;&#x52A1;&#x5668;</li>
+</ol>
+<h2 id="&#x524D;&#x63D0;&#x6761;&#x4EF6;">&#x524D;&#x63D0;&#x6761;&#x4EF6;</h2>
+<p>&#x5728;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x6EE1;&#x8DB3;&#x6240;&#x6709;<a href="dependencies.html">&#x4F9D;&#x8D56;&#x9879;&#x8981;&#x6C42;</a>&#xFF0C;&#x7279;&#x522B;&#x662F;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x7F6E;">&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x7F6E;</h2>
+<ol>
+<li>&#x521B;&#x5EFA;&#x5FC5;&#x8981;&#x7684;&#x8868;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-sql"><span class="hljs-comment">-- &#x8D37;&#x6B3E;&#x4EA4;&#x6613;&#x8868;</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> t_trade (
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">bigint</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+    trade_no <span class="hljs-built_in">varchar</span>(<span class="hljs-number">64</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    account_no <span class="hljs-built_in">varchar</span>(<span class="hljs-number">60</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    <span class="hljs-keyword">type</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    amount <span class="hljs-built_in">decimal</span>(<span class="hljs-number">10</span>,<span class="hljs-number">2</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    terms <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    interest_rate <span class="hljs-built_in">decimal</span>(<span class="hljs-number">10</span>,<span class="hljs-number">6</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    trade_time datetime <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    <span class="hljs-keyword">status</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">id</span>),
+    <span class="hljs-keyword">UNIQUE</span> <span class="hljs-keyword">KEY</span> uniq_trade_no (trade_no)
+);
+
+<span class="hljs-comment">-- &#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#x8868;</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> t_repay_plan (
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">bigint</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+    account_no <span class="hljs-built_in">varchar</span>(<span class="hljs-number">60</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    loan_no <span class="hljs-built_in">varchar</span>(<span class="hljs-number">64</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    term <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    principal <span class="hljs-built_in">decimal</span>(<span class="hljs-number">10</span>,<span class="hljs-number">2</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    interest <span class="hljs-built_in">decimal</span>(<span class="hljs-number">10</span>,<span class="hljs-number">2</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    init_date <span class="hljs-built_in">date</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    repay_date <span class="hljs-built_in">date</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    repay_state <span class="hljs-built_in">varchar</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">id</span>),
+    <span class="hljs-keyword">UNIQUE</span> <span class="hljs-keyword">KEY</span> uniq_loan_no_term (loan_no, term)
+);
+</code></pre>
+<h2 id="&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x6A21;&#x578B;">&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<ol>
+<li><strong>&#x4EA4;&#x6613;&#x6A21;&#x578B;</strong></li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Trade <span class="hljs-keyword">struct</span> {
+    TradeNo      <span class="hljs-keyword">string</span>    <span class="hljs-string">`order:&quot;0&quot; header:&quot;trade_no&quot;`</span>
+    AccountNo    <span class="hljs-keyword">string</span>    <span class="hljs-string">`order:&quot;1&quot; header:&quot;account_no&quot;`</span>
+    Type         <span class="hljs-keyword">string</span>    <span class="hljs-string">`order:&quot;2&quot; header:&quot;type&quot;`</span>
+    Amount       <span class="hljs-keyword">float64</span>   <span class="hljs-string">`order:&quot;3&quot; header:&quot;amount&quot;`</span>
+    Terms        <span class="hljs-keyword">int</span>       <span class="hljs-string">`order:&quot;4&quot; header:&quot;terms&quot;`</span>
+    InterestRate <span class="hljs-keyword">float64</span>   <span class="hljs-string">`order:&quot;5&quot; header:&quot;interest_rate&quot;`</span>
+    Status       <span class="hljs-keyword">string</span>    <span class="hljs-string">`order:&quot;6&quot; header:&quot;status&quot;`</span>
+    TradeTime    time.Time <span class="hljs-string">`order:&quot;7&quot; header:&quot;trade_time&quot;`</span>
+}
+</code></pre>
+<ol>
+<li><strong>&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#x6A21;&#x578B;</strong></li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> RepayPlan <span class="hljs-keyword">struct</span> {
+    AccountNo  <span class="hljs-keyword">string</span>
+    LoanNo     <span class="hljs-keyword">string</span>
+    Term       <span class="hljs-keyword">int</span>
+    Principal  <span class="hljs-keyword">float64</span>
+    Interest   <span class="hljs-keyword">float64</span>
+    InitDate   time.Time
+    RepayDate  time.Time
+    RepayState <span class="hljs-keyword">string</span>
+}
+</code></pre>
+<ol>
+<li><strong>&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x6A21;&#x578B;</strong></li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> RepayPlanStats <span class="hljs-keyword">struct</span> {
+    Term       <span class="hljs-keyword">int</span>
+    TotalPrincipal  <span class="hljs-keyword">float64</span>
+    TotalInterest   <span class="hljs-keyword">float64</span>
+}
+</code></pre>
+<h2 id="&#x6587;&#x4EF6;&#x5904;&#x7406;&#x7EC4;&#x4EF6;">&#x6587;&#x4EF6;&#x5904;&#x7406;&#x7EC4;&#x4EF6;</h2>
+<h3 id="1-&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6A21;&#x578B;">1. &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6A21;&#x578B;</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> tradeFile = file.FileObjectModel{
+    FileStore:     &amp;file.LocalFileSystem{},
+    FileName:      <span class="hljs-string">&quot;res/trade.data&quot;</span>,
+    Type:          file.TSV,
+    Encoding:      <span class="hljs-string">&quot;utf-8&quot;</span>,
+    Header:        <span class="hljs-literal">false</span>,
+    ItemPrototype: &amp;Trade{},    <span class="hljs-comment">// &#x6587;&#x4EF6;&#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x6620;&#x5C04;&#x5230;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x6A21;&#x578B;</span>
+}
+
+<span class="hljs-keyword">var</span> statsFileExport = file.FileObjectModel{
+    FileStore:     &amp;file.LocalFileSystem{},
+    FileName:      <span class="hljs-string">&quot;res/{date,yyyyMMdd}/stats.csv&quot;</span>,
+    Type:          file.CSV,
+    Encoding:      <span class="hljs-string">&quot;utf-8&quot;</span>,
+    Checksum:      file.MD5,
+    ItemPrototype: &amp;RepayPlanStats{},   <span class="hljs-comment">// &#x6587;&#x4EF6;&#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x6620;&#x5C04;&#x5230;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x6A21;&#x578B;</span>
+}
+
+<span class="hljs-keyword">var</span> ftp = &amp;file.FTPFileSystem{
+    Hort:        <span class="hljs-string">&quot;localhost&quot;</span>,
+    Port:        <span class="hljs-number">21</span>,
+    User:        <span class="hljs-string">&quot;yourftpuser&quot;</span>,
+    Password:    <span class="hljs-string">&quot;yourftppassword&quot;</span>,
+    ConnTimeout: time.Second * <span class="hljs-number">10</span>,
+}
+
+<span class="hljs-keyword">var</span> copyFileToFtp = file.FileMove{
+    FromFileName:  <span class="hljs-string">&quot;res/{date,yyyyMMdd}/stats.csv&quot;</span>,
+    FromFileStore: &amp;file.LocalFileSystem{},
+    ToFileStore:   ftp,
+    ToFileName:    <span class="hljs-string">&quot;stats/{date,yyyyMMdd}/stats.csv&quot;</span>,
+}
+<span class="hljs-keyword">var</span> copyChecksumFileToFtp = file.FileMove{
+    FromFileName:  <span class="hljs-string">&quot;res/{date,yyyyMMdd}/stats.csv.md5&quot;</span>,
+    FromFileStore: &amp;file.LocalFileSystem{},
+    ToFileStore:   ftp,
+    ToFileName:    <span class="hljs-string">&quot;stats/{date,yyyyMMdd}/stats.csv.md5&quot;</span>,
+}
+</code></pre>
+<h3 id="2-&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5904;&#x7406;&#x5668;">2. &#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5904;&#x7406;&#x5668;</h3>
+<h4 id="1-&#x4EA4;&#x6613;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x5E93;">1. &#x4EA4;&#x6613;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x5E93;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> tradeImporter <span class="hljs-keyword">struct</span> {
+    db *sql.DB
+}
+
+<span class="hljs-keyword">func</span> (p *tradeImporter) Write(items []<span class="hljs-keyword">interface</span>{}, chunkCtx *gobatch.ChunkContext) gobatch.BatchError {
+    <span class="hljs-keyword">for</span> _, item := <span class="hljs-keyword">range</span> items {
+        trade := item.(*Trade)
+        _, err := p.db.Exec(<span class="hljs-string">&quot;INSERT INTO t_trade(trade_no, account_no, type, amount, terms, interest_rate, trade_time, status) values (?,?,?,?,?,?,?,?)&quot;</span>,
+            trade.TradeNo, trade.AccountNo, trade.Type, trade.Amount, trade.Terms, trade.InterestRate, trade.TradeTime, trade.Status)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> gobatch.NewBatchError(gobatch.ErrCodeDbFail, <span class="hljs-string">&quot;&#x63D2;&#x5165;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x5931;&#x8D25;&quot;</span>, err)
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h4 id="2-&#x6839;&#x636E;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x751F;&#x6210;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;">2. &#x6839;&#x636E;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x751F;&#x6210;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;</h4>
+<p>&#x4ECE;t_trade&#x8868;&#x8BFB;&#x53D6;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;database/sql&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;github.com/chararch/gobatch&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> tradeReader <span class="hljs-keyword">struct</span> {
+    db *sql.DB
+}
+
+<span class="hljs-keyword">func</span> (h *tradeReader) Open(execution *gobatch.StepExecution) gobatch.BatchError {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *tradeReader) Close(execution *gobatch.StepExecution) gobatch.BatchError {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *tradeReader) ReadKeys() ([]<span class="hljs-keyword">interface</span>{}, error) {
+    rows, err := h.db.Query(<span class="hljs-string">&quot;select id from t_trade&quot;</span>)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+    <span class="hljs-keyword">defer</span> rows.Close()
+
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">interface</span>{}
+    <span class="hljs-keyword">var</span> id <span class="hljs-keyword">int64</span>
+    <span class="hljs-keyword">for</span> rows.Next() {
+        err = rows.Scan(&amp;id)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+        }
+        result = <span class="hljs-built_in">append</span>(result, id)
+    }
+    <span class="hljs-keyword">return</span> result, <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *tradeReader) ReadItem(key <span class="hljs-keyword">interface</span>{}) (<span class="hljs-keyword">interface</span>{}, error) {
+    id := <span class="hljs-keyword">int64</span>(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">switch</span> r := key.(<span class="hljs-keyword">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">int64</span>:
+        id = r
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">float64</span>:
+        id = <span class="hljs-keyword">int64</span>(r)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, fmt.Errorf(<span class="hljs-string">&quot;key type error, type:%T, value:%v&quot;</span>, key, key)
+    }
+    rows, err := h.db.Query(<span class="hljs-string">&quot;select trade_no, account_no, type, amount, terms, interest_rate, trade_time, status from t_trade where id = ?&quot;</span>, id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+    <span class="hljs-keyword">defer</span> rows.Close()
+
+    trade := &amp;Trade{}
+    <span class="hljs-keyword">if</span> rows.Next() {
+        err = rows.Scan(&amp;trade.TradeNo, &amp;trade.AccountNo, &amp;trade.Type, &amp;trade.Amount, &amp;trade.Terms, &amp;trade.InterestRate, &amp;trade.TradeTime, &amp;trade.Status)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+        }
+    }
+
+    <span class="hljs-keyword">return</span> trade, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<p>&#x6839;&#x636E;&#x4EA4;&#x6613;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x5E76;&#x751F;&#x6210;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;database/sql&quot;</span>
+    <span class="hljs-string">&quot;github.com/chararch/gobatch&quot;</span>
+    <span class="hljs-string">&quot;time&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> repayPlanHandler <span class="hljs-keyword">struct</span> {
+    db *sql.DB
+}
+
+<span class="hljs-keyword">func</span> (h *repayPlanHandler) Process(item <span class="hljs-keyword">interface</span>{}, chunkCtx *gobatch.ChunkContext) (<span class="hljs-keyword">interface</span>{}, gobatch.BatchError) {
+    trade := item.(*Trade)
+    plans := <span class="hljs-built_in">make</span>([]*RepayPlan, <span class="hljs-number">0</span>)
+    restPrincipal := trade.Amount
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">1</span>; i &lt;= trade.Terms; i++ {
+        principal := restPrincipal / <span class="hljs-keyword">float64</span>(trade.Terms-i+<span class="hljs-number">1</span>)
+        interest := restPrincipal * trade.InterestRate / <span class="hljs-number">12</span>
+        repayPlan := &amp;RepayPlan{
+            AccountNo:  trade.AccountNo,
+            LoanNo:     trade.TradeNo,
+            Term:       i,
+            Principal:  principal,
+            Interest:   interest,
+            InitDate:   time.Now(),
+            RepayDate:  time.Now().AddDate(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>),
+            RepayState: <span class="hljs-string">&quot;&quot;</span>,
+            CreateTime: time.Now(),
+            UpdateTime: time.Now(),
+        }
+        plans = <span class="hljs-built_in">append</span>(plans, repayPlan)
+        restPrincipal -= principal
+    }
+    <span class="hljs-keyword">return</span> plans, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-keyword">func</span> (h *repayPlanHandler) Write(items []<span class="hljs-keyword">interface</span>{}, chunkCtx *gobatch.ChunkContext) gobatch.BatchError {
+    <span class="hljs-keyword">for</span> _, item := <span class="hljs-keyword">range</span> items {
+        plans := item.([]*RepayPlan)
+        <span class="hljs-keyword">for</span> _, plan := <span class="hljs-keyword">range</span> plans {
+            _, err := h.db.Exec(<span class="hljs-string">&quot;INSERT INTO t_repay_plan(account_no, loan_no, term, principal, interest, init_date, repay_date, repay_state) values (?,?,?,?,?,?,?,?)&quot;</span>,
+                plan.AccountNo, plan.LoanNo, plan.Term, plan.Principal, plan.Interest, plan.InitDate, plan.RepayDate, plan.RepayState)
+            <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+                <span class="hljs-keyword">return</span> gobatch.NewBatchError(gobatch.ErrCodeDbFail, <span class="hljs-string">&quot;insert t_repay_plan failed&quot;</span>, err)
+            }
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h4 id="3-&#x7EDF;&#x8BA1;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#x6570;&#x636E;&#x751F;&#x6210;csv&#x6587;&#x4EF6;">3. &#x7EDF;&#x8BA1;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;&#x6570;&#x636E;&#x751F;&#x6210;CSV&#x6587;&#x4EF6;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;database/sql&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;github.com/chararch/gobatch&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> statsHandler <span class="hljs-keyword">struct</span> {
+    db *sql.DB
+}
+
+<span class="hljs-keyword">func</span> (h *statsHandler) Open(execution *gobatch.StepExecution) gobatch.BatchError {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *statsHandler) Close(execution *gobatch.StepExecution) gobatch.BatchError {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *statsHandler) ReadKeys() ([]<span class="hljs-keyword">interface</span>{}, error) {
+    rows, err := h.db.Query(<span class="hljs-string">&quot;select distinct(term) as term from t_trade&quot;</span>)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+    <span class="hljs-keyword">defer</span> rows.Close()
+
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">interface</span>{}
+    <span class="hljs-keyword">var</span> id <span class="hljs-keyword">int64</span>
+    <span class="hljs-keyword">for</span> rows.Next() {
+        err = rows.Scan(&amp;id)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+        }
+        result = <span class="hljs-built_in">append</span>(result, id)
+    }
+    <span class="hljs-keyword">return</span> result, <span class="hljs-literal">nil</span>
+}
+<span class="hljs-keyword">func</span> (h *statsHandler) ReadItem(key <span class="hljs-keyword">interface</span>{}) (<span class="hljs-keyword">interface</span>{}, error) {
+    term := <span class="hljs-keyword">int64</span>(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">switch</span> r := key.(<span class="hljs-keyword">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">int64</span>:
+        term = r
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">float64</span>:
+        term = <span class="hljs-keyword">int64</span>(r)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, fmt.Errorf(<span class="hljs-string">&quot;key type error, type:%T, value:%v&quot;</span>, key, key)
+    }
+    rows, err := h.db.Query(<span class="hljs-string">&quot;select sum(principal) as total_principal, sum(interest) as total_interest from t_repay_plan where term = ?&quot;</span>, term)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+    <span class="hljs-keyword">defer</span> rows.Close()
+
+    stats := &amp;RepayPlanStats{}
+    <span class="hljs-keyword">if</span> rows.Next() {
+        err = rows.Scan(&amp;stats.Term, &amp;stats.TotalPrincipal, &amp;stats.TotalInterest)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+        }
+    }
+
+    <span class="hljs-keyword">return</span> stats, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-keyword">func</span> (ss *statsHandler) Process(item <span class="hljs-keyword">interface</span>{}, chunkCtx *gobatch.ChunkContext) (<span class="hljs-keyword">interface</span>{}, gobatch.BatchError) {
+    <span class="hljs-keyword">return</span> item, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h2 id="&#x6784;&#x5EFA;&#x5E76;&#x8FD0;&#x884C;&#x4EFB;&#x52A1;">&#x6784;&#x5EFA;&#x5E76;&#x8FD0;&#x884C;&#x4EFB;&#x52A1;</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> buildAndRunJob() {
+    <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;</span>
+    sqlDb := openDB()
+    gobatch.SetDB(sqlDb)
+    gobatch.SetTransactionManager(gobatch.NewTransactionManager(sqlDb))
+
+    <span class="hljs-comment">// &#x6784;&#x5EFA;&#x6B65;&#x9AA4;</span>
+    step1 := gobatch.NewStep(<span class="hljs-string">&quot;import_trade&quot;</span>).
+        ReadFile(tradeFile).
+        Writer(&amp;tradeImporter{sqlDb}).
+        Partitions(<span class="hljs-number">10</span>).
+        Build()
+
+    step2 := gobatch.NewStep(<span class="hljs-string">&quot;gen_repay_plan&quot;</span>).
+        Reader(&amp;tradeReader{sqlDb}).
+        Handler(&amp;repayPlanHandler{sqlDb}).
+        Partitions(<span class="hljs-number">10</span>).
+        Build()
+
+    step3 := gobatch.NewStep(<span class="hljs-string">&quot;stats&quot;</span>).
+        Reader(&amp;statsHandler{sqlDb}).
+        Processor(&amp;statsHandler{sqlDb}).
+        WriteFile(statsFileExport).
+        Partitions(<span class="hljs-number">2</span>).
+        Build()
+
+    step4 := gobatch.NewStep(<span class="hljs-string">&quot;upload_file_to_ftp&quot;</span>).
+        CopyFile(copyFileToFtp, copyChecksumFileToFtp).
+        Build()
+
+    <span class="hljs-comment">// &#x6784;&#x5EFA;&#x5E76;&#x6CE8;&#x518C;&#x4EFB;&#x52A1;</span>
+    job := gobatch.NewJob(<span class="hljs-string">&quot;accounting_job&quot;</span>).
+        Step(step1, step2, step3, step4).
+        Build()
+    gobatch.Register(job)
+
+    <span class="hljs-comment">// &#x8FD0;&#x884C;&#x4EFB;&#x52A1;&#x5E76;&#x4F20;&#x5165;&#x53C2;&#x6570;</span>
+    params, _ := util.JsonString(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}{
+        <span class="hljs-string">&quot;date&quot;</span>: time.Now().Format(<span class="hljs-string">&quot;2006-01-02&quot;</span>),
+        <span class="hljs-string">&quot;rand&quot;</span>: time.Now().Nanosecond(),
+    })
+    gobatch.Start(context.Background(), job.Name(), params)
+}
+</code></pre>
+<h2 id="&#x4EFB;&#x52A1;&#x6D41;&#x7A0B;&#x8BF4;&#x660E;">&#x4EFB;&#x52A1;&#x6D41;&#x7A0B;&#x8BF4;&#x660E;</h2>
+<ol>
+<li><p><strong>&#x5BFC;&#x5165;&#x4EA4;&#x6613;&#x6570;&#x636E; (step1)</strong></p>
+<ul>
+<li>&#x4ECE;TSV&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x4EA4;&#x6613;&#x6570;&#x636E;</li>
+<li>&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x5165;t_trade&#x8868;</li>
+<li>&#x4F7F;&#x7528;10&#x4E2A;&#x5206;&#x533A;&#x5E76;&#x884C;&#x5904;&#x7406;</li>
+</ul>
+</li>
+<li><p><strong>&#x751F;&#x6210;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212; (step2)</strong></p>
+<ul>
+<li>&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x8BFB;&#x53D6;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;</li>
+<li>&#x8BA1;&#x7B97;&#x8FD8;&#x6B3E;&#x8BA1;&#x5212;</li>
+<li>&#x5C06;&#x8BA1;&#x5212;&#x4FDD;&#x5B58;&#x5230;t_repay_plan&#x8868;</li>
+<li>&#x4F7F;&#x7528;&#x5E76;&#x884C;&#x5904;&#x7406;</li>
+</ul>
+</li>
+<li><p><strong>&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x5BFC;&#x51FA;&#x6587;&#x4EF6; (step3)</strong></p>
+<ul>
+<li>&#x6C47;&#x603B;&#x8FD8;&#x6B3E;&#x6570;&#x636E;</li>
+<li>&#x8BA1;&#x7B97;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;</li>
+<li>&#x5C06;&#x7ED3;&#x679C;&#x5199;&#x5165;CSV&#x6587;&#x4EF6;</li>
+</ul>
+</li>
+<li><p><strong>&#x4E0A;&#x4F20;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x5230;FTP (step4)</strong></p>
+<ul>
+<li>&#x5C06;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;CSV&#x6587;&#x4EF6;&#x548C;&#x6821;&#x9A8C;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;FTP&#x670D;&#x52A1;&#x5668;</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="usage_examples.html" class="navigation navigation-prev " aria-label="Previous page: 一个简单示例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="contribution_guide.html" class="navigation navigation-next " aria-label="Next page: 贡献指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文件处理示例","level":"1.2.10","depth":2,"next":{"title":"贡献指南","level":"1.2.11","depth":2,"path":"zh/contribution_guide.md","ref":"zh/contribution_guide.md","articles":[]},"previous":{"title":"一个简单示例","level":"1.2.9","depth":2,"path":"zh/usage_examples.md","ref":"zh/usage_examples.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","copy-code-button","language-picker"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":2,"languages":[{"lang":"zh-hans","name":"简体中文","link":"zh"},{"lang":"en","name":"English","link":"en"}]},"expandable-chapters":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GoBatch Documentation","language":"zh-hans","gitbook":"*","description":"GoBatch batch processing framework documentation"},"file":{"path":"zh/file_examples.md","mtime":"2025-02-27T15:29:48.677Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-02-27T15:30:23.152Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

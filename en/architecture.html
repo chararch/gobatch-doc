@@ -1,0 +1,830 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Architecture · GoBatch Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="job.html" />
+    
+    
+    <link rel="prev" href="basics.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    中文文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../zh/introduction.html">
+            
+                <a href="../zh/introduction.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../zh/quick_start.html">
+            
+                <a href="../zh/quick_start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../zh/basics.html">
+            
+                <a href="../zh/basics.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../zh/architecture.html">
+            
+                <a href="../zh/architecture.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../zh/job.html">
+            
+                <a href="../zh/job.html">
+            
+                    
+                    任务介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../zh/step.html">
+            
+                <a href="../zh/step.html">
+            
+                    
+                    Step介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../zh/dependencies.html">
+            
+                <a href="../zh/dependencies.html">
+            
+                    
+                    依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../zh/configuration.html">
+            
+                <a href="../zh/configuration.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../zh/usage_examples.html">
+            
+                <a href="../zh/usage_examples.html">
+            
+                    
+                    一个简单示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../zh/file_examples.html">
+            
+                <a href="../zh/file_examples.html">
+            
+                    
+                    文件处理示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../zh/contribution_guide.html">
+            
+                <a href="../zh/contribution_guide.html">
+            
+                    
+                    贡献指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../zh/feedback.html">
+            
+                <a href="../zh/feedback.html">
+            
+                    
+                    问题反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    English Documentation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="quick_start.html">
+            
+                <a href="quick_start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="job.html">
+            
+                <a href="job.html">
+            
+                    
+                    Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="step.html">
+            
+                <a href="step.html">
+            
+                    
+                    Step
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="dependencies.html">
+            
+                <a href="dependencies.html">
+            
+                    
+                    Dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="usage_examples.html">
+            
+                <a href="usage_examples.html">
+            
+                    
+                    A Simple Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="file_examples.html">
+            
+                <a href="file_examples.html">
+            
+                    
+                    File Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="contribution_guide.html">
+            
+                <a href="contribution_guide.html">
+            
+                    
+                    Contribution Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Architecture</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="architecture-design">Architecture Design</h1>
+<h2 id="overall-architecture">Overall Architecture</h2>
+<p>GoBatch consists of three layers:</p>
+<ol>
+<li><p><strong>Interface Layer</strong></p>
+<ul>
+<li>Provides APIs for upper-level applications</li>
+<li>Includes job orchestration, management, start and pause operations</li>
+</ul>
+</li>
+<li><p><strong>Core Layer</strong></p>
+<ul>
+<li>Provides job execution engine</li>
+<li>Includes common components for data processing, file I/O, parallel processing, and error handling</li>
+</ul>
+</li>
+<li><p><strong>Foundation Layer</strong></p>
+<ul>
+<li>Goroutine pool management</li>
+<li>Transaction management</li>
+<li>Job execution state recording</li>
+<li>Logging</li>
+</ul>
+</li>
+</ol>
+<p><img src="../images/layer.png" alt=""></p>
+<p>As a batch processing framework, GoBatch&apos;s core capabilities are job orchestration and execution. Applications must first complete job orchestration through GoBatch interfaces before executing tasks.</p>
+<p>In terms of job structure, a Job consists of multiple Steps, each containing business logic, executed in sequence. Job orchestration involves constructing different business logic into multiple Steps and assembling them into a Job in a specific order, managed by the GoBatch runtime. As a batch processing framework, GoBatch can manage multiple jobs.</p>
+<p>During job execution, applications can pass parameters to specified jobs. GoBatch generates a JobInstance based on the input parameters. A JobInstance may be executed multiple times, and for each execution, GoBatch creates a JobExecution record to track the execution state. Similarly, each Step execution generates a StepExecution record. GoBatch stores JobInstance, JobExecution, and StepExecution through Repository in the database.</p>
+<p>GoBatch supports multiple ways to trigger job execution. Applications can trigger jobs through scheduled tasks, real-time events, or command-line interfaces.</p>
+<p>The execution flow of GoBatch batch processing applications is as follows:</p>
+<p><img src="../images/arch.png" alt=""></p>
+<h2 id="core-components">Core Components</h2>
+<h3 id="job">Job</h3>
+<p>Job is the highest-level concept in batch processing, representing a complete batch task. Each Job contains one or more Steps executed in a specific order. The main responsibility of a Job is to coordinate the execution of Steps. For detailed information about Jobs, see <a href="job.html">Job</a>.</p>
+<h3 id="step">Step</h3>
+<p>Step is an independent processing unit within a Job. GoBatch supports three types of steps:</p>
+<ol>
+<li><p><strong>SimpleStep</strong></p>
+<ul>
+<li>Executes a task in a single thread</li>
+<li>Suitable for simple processing logic</li>
+<li>Implements business logic through Handler or Task interface</li>
+</ul>
+</li>
+<li><p><strong>ChunkStep</strong></p>
+<ul>
+<li>Processes data in chunks</li>
+<li>Implements &quot;read-process-write&quot; pattern</li>
+<li>Supports transaction management</li>
+<li>Main components:<ul>
+<li>ItemReader: Data reading</li>
+<li>ItemProcessor: Data processing</li>
+<li>ItemWriter: Data writing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>PartitionStep</strong></p>
+<ul>
+<li>Supports parallel processing</li>
+<li>Splits large tasks into subtasks</li>
+<li>Can aggregate subtask results</li>
+<li>Main components:<ul>
+<li>Partitioner: Task partitioning</li>
+<li>Aggregator: Result aggregation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>For detailed information about Steps, see <a href="step.html">Step</a>.</p>
+<h3 id="builders">Builders</h3>
+<ol>
+<li><p><strong>JobBuilder</strong></p>
+<ul>
+<li>Used to build Job instances</li>
+<li>Supports Steps and Listeners configuration</li>
+<li>Provides fluent API</li>
+</ul>
+</li>
+<li><p><strong>StepBuilder</strong></p>
+<ul>
+<li>Used to build Step instances</li>
+<li>Supports Reader, Processor, Writer configuration</li>
+<li>Supports partition and listener configuration</li>
+<li>Provides fluent API</li>
+</ul>
+</li>
+</ol>
+<p><img src="../images/builder.png" alt=""></p>
+<h2 id="execution-mechanism">Execution Mechanism</h2>
+<h3 id="job-orchestration">Job Orchestration</h3>
+<ol>
+<li><strong>Step Building</strong><ul>
+<li>Create Step instances using StepBuilder</li>
+<li>Configure Step processing logic and behavior</li>
+<li>Set listeners and other parameters</li>
+</ul>
+</li>
+</ol>
+<p><img src="../images/step_builder.png" alt=""></p>
+<ol>
+<li><strong>Job Building</strong><ul>
+<li>Create Job instances using JobBuilder</li>
+<li>Add Steps and configure execution order</li>
+<li>Set Job-level listeners</li>
+</ul>
+</li>
+</ol>
+<p><img src="../images/job_reassemble.png" alt=""></p>
+<ol>
+<li><strong>Registration</strong><ul>
+<li>Register Job to JobRegistry</li>
+<li>Support runtime Job lookup and management</li>
+</ul>
+</li>
+</ol>
+<h3 id="job-execution">Job Execution</h3>
+<ol>
+<li><p><strong>Job Execution Flow</strong></p>
+<ul>
+<li>Parameter validation</li>
+<li>Create JobInstance and JobExecution</li>
+<li>Execute Steps in sequence</li>
+<li>State management and context maintenance</li>
+<li>Process execution results</li>
+</ul>
+</li>
+<li><p><strong>Step Execution Flow</strong></p>
+<ul>
+<li>Step initialization</li>
+<li>Resource allocation</li>
+<li>Execute business logic<ul>
+<li>SimpleStep: Direct Handler execution</li>
+<li>ChunkStep: Iterative read-process-write</li>
+<li>PartitionStep: Parallel subtask execution</li>
+</ul>
+</li>
+<li>Resource cleanup</li>
+<li>State update</li>
+</ul>
+</li>
+</ol>
+<p><img src="../images/start_job.png" alt=""></p>
+<h3 id="transaction-management">Transaction Management</h3>
+<ol>
+<li><p><strong>TransactionManager</strong></p>
+<ul>
+<li>Manage database transactions</li>
+<li>Provide transaction begin, commit, and rollback operations</li>
+<li>Support custom transaction managers</li>
+</ul>
+</li>
+<li><p><strong>Chunk Processing</strong></p>
+<ul>
+<li>Each Chunk as a transaction unit</li>
+<li>Support failure rollback</li>
+<li>Provide retry mechanism</li>
+</ul>
+</li>
+</ol>
+<h2 id="extension-mechanism">Extension Mechanism</h2>
+<h3 id="listener-interfaces">Listener Interfaces</h3>
+<ol>
+<li><p><strong>JobListener</strong></p>
+<ul>
+<li>BeforeJob: Callback before job execution</li>
+<li>AfterJob: Callback after job execution</li>
+</ul>
+</li>
+<li><p><strong>StepListener</strong></p>
+<ul>
+<li>BeforeStep: Callback before step execution</li>
+<li>AfterStep: Callback after step execution</li>
+</ul>
+</li>
+<li><p><strong>ChunkListener</strong></p>
+<ul>
+<li>BeforeChunk: Callback before chunk processing</li>
+<li>AfterChunk: Callback after chunk processing</li>
+<li>OnError: Error handling callback</li>
+</ul>
+</li>
+<li><p><strong>PartitionListener</strong></p>
+<ul>
+<li>BeforePartition: Callback before partitioning</li>
+<li>AfterPartition: Callback after partitioning</li>
+<li>OnError: Error handling callback</li>
+</ul>
+</li>
+</ol>
+<h2 id="state-management">State Management</h2>
+<h3 id="execution-state-recording">Execution State Recording</h3>
+<p>GoBatch records runtime states through the following objects:</p>
+<ol>
+<li><p><strong>JobInstance</strong></p>
+<ul>
+<li>Corresponds to a set of parameters for a Job</li>
+<li>Same parameters map to the same JobInstance</li>
+</ul>
+</li>
+<li><p><strong>JobExecution</strong></p>
+<ul>
+<li>Corresponds to one execution of a JobInstance</li>
+<li>Restart generates new JobExecution</li>
+</ul>
+</li>
+<li><p><strong>StepContext</strong></p>
+<ul>
+<li>Corresponds to Step context under a JobInstance</li>
+<li>Independent of execution count</li>
+</ul>
+</li>
+<li><p><strong>StepExecution</strong></p>
+<ul>
+<li>Corresponds to Step execution under a JobExecution</li>
+<li>Restart generates new StepExecution</li>
+</ul>
+</li>
+</ol>
+<p>The database table relationships of these 4 objects are as follows:
+<img src="../images/status_record.png" alt=""></p>
+<h3 id="state-transitions">State Transitions</h3>
+<p>Job and Step execution states:</p>
+<ul>
+<li>STARTING: Waiting for execution</li>
+<li>STARTED: Currently executing</li>
+<li>STOPPING: Stopping in progress</li>
+<li>STOPPED: Stopped</li>
+<li>COMPLETED: Successfully completed</li>
+<li>FAILED: Execution failed</li>
+<li>UNKNOWN: Unknown state</li>
+</ul>
+<p><img src="../images/status_trans.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basics.html" class="navigation navigation-prev " aria-label="Previous page: Basics">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="job.html" class="navigation navigation-next " aria-label="Next page: Job">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.3.4","depth":2,"next":{"title":"Job","level":"1.3.5","depth":2,"path":"en/job.md","ref":"en/job.md","articles":[]},"previous":{"title":"Basics","level":"1.3.3","depth":2,"path":"en/basics.md","ref":"en/basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","copy-code-button","language-picker"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":2,"languages":[{"lang":"zh-hans","name":"简体中文","link":"zh"},{"lang":"en","name":"English","link":"en"}]},"expandable-chapters":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GoBatch Documentation","language":"zh-hans","gitbook":"*","description":"GoBatch batch processing framework documentation"},"file":{"path":"en/architecture.md","mtime":"2025-02-27T15:29:48.647Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-02-27T15:30:23.152Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

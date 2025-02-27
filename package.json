@@ -1,0 +1,12 @@
+{
+  "name": "gobatch-doc",
+  "version": "1.0.0",
+  "description": "GoBatch Documentation",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
