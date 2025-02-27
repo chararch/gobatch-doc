@@ -21,7 +21,7 @@ jobs:
       - name: Install and patch gitbook
         run: |
           npm install -g gitbook-cli
-          cd /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules
+          cd /opt/hostedtoolcache/node/16.*/x64/lib/node_modules/gitbook-cli/node_modules/npm/node_modules
           sed -i 's/fs.stat = statFix(fs.stat)/\/\/fs.stat = statFix(fs.stat)/' graceful-fs/polyfills.js
           sed -i 's/fs.fstat = statFix(fs.fstat)/\/\/fs.fstat = statFix(fs.fstat)/' graceful-fs/polyfills.js
           sed -i 's/fs.lstat = statFix(fs.lstat)/\/\/fs.lstat = statFix(fs.lstat)/' graceful-fs/polyfills.js
