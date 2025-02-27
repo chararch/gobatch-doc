@@ -16,18 +16,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
 
-      - name: Install dependencies
+      - name: Install and patch gitbook
         run: |
-          npm init -y
-          npm install honkit --save-dev
-          npm install web-streams-polyfill --save-dev
-          npm install
+          npm install -g gitbook-cli
+          cd /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules
+          sed -i 's/fs.stat = statFix(fs.stat)/\/\/fs.stat = statFix(fs.stat)/' graceful-fs/polyfills.js
+          sed -i 's/fs.fstat = statFix(fs.fstat)/\/\/fs.fstat = statFix(fs.fstat)/' graceful-fs/polyfills.js
+          sed -i 's/fs.lstat = statFix(fs.lstat)/\/\/fs.lstat = statFix(fs.lstat)/' graceful-fs/polyfills.js
+          cd -
+          gitbook install
 
       - name: Build documentation
         run: |
-          node -e "global.ReadableStream = require('web-streams-polyfill').ReadableStream" -e "require('honkit').build()"
+          gitbook build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
