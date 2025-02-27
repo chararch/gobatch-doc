@@ -16,17 +16,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Install dependencies
         run: |
           npm init -y
           npm install honkit --save-dev
+          npm install web-streams-polyfill --save-dev
           npm install
 
       - name: Build documentation
         run: |
-          npx honkit build
+          node -e "global.ReadableStream = require('web-streams-polyfill').ReadableStream" -e "require('honkit').build()"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

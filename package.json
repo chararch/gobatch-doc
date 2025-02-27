@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "GoBatch Documentation",
   "scripts": {
-    "serve": "honkit serve",
-    "build": "honkit build"
+    "serve": "node -e \"global.ReadableStream = require('web-streams-polyfill').ReadableStream\" -e \"require('honkit').serve()\"",
+    "build": "node -e \"global.ReadableStream = require('web-streams-polyfill').ReadableStream\" -e \"require('honkit').build()\""
   },
   "devDependencies": {
-    "honkit": "^4.0.0"
+    "honkit": "^4.0.0",
+    "web-streams-polyfill": "^3.2.1"
   }
 }
