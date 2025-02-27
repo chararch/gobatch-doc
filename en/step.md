@@ -26,7 +26,7 @@ GoBatch supports three types of steps:
      - Partitioner: Task partitioning
      - Aggregator: Result aggregation
 
-[](../images/step.png)
+![](../images/step.png)
 
 ## Writing Simple Step
 
@@ -180,7 +180,7 @@ step := gobatch.NewStep("file_write").
 ### Simple Step Execution
 Simple step executes Handler's business logic directly in the current Job thread. Suitable for simple business logic scenarios.
 
-[](../images/exec_simple_step.png)
+![](../images/exec_simple_step.png)
 
 ### Chunk Step Execution
 Executes the following flow in a single thread:
@@ -191,7 +191,7 @@ Executes the following flow in a single thread:
 5. Commit or rollback transaction
 6. Repeat above steps until processing completes
 
-[](../images/exec_chunk_step.png)
+![](../images/exec_chunk_step.png)
 
 ### Partition Step Execution
 1. Use Partitioner to partition data
@@ -200,6 +200,6 @@ Executes the following flow in a single thread:
 4. Wait for all substeps to complete
 5. Use Aggregator to aggregate results
 
-[](../images/exec_partition_step.png)
+![](../images/exec_partition_step.png)
 
 For information on how to write Steps, please refer to [Example 1](usage_examples.md) and [Example 2](file_examples.md).

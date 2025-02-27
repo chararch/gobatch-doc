@@ -5,11 +5,11 @@ A Job is a parameterized, reusable batch processing unit. A job consists of mult
 ## Structure
 
 The static structure of a job is as follows:
-[](images/job_struct.png)
+![](../images/job_struct.png)
 
 Jobs can be triggered in various ways, such as command line, RPC requests, MQ messages, or timers. Jobs can accept parameters during execution (typical parameters like date), with different parameters corresponding to different job instances. A job instance may be executed multiple times, with each execution generating an execution record containing the job's start time, end time, running status, or results. Similarly, each step within the job generates a step execution record for each execution, which is associated with the job execution record.
 Job instances and execution records of both jobs and steps are persisted in the database.
-[](images/job_model.png)
+![](../images/job_model.png)
 
 ## Parameters
 

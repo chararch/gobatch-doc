@@ -18,7 +18,7 @@ GoBatch consists of three layers:
    - Job execution state recording
    - Logging
 
-[](../images/layer.png)
+![](../images/layer.png)
 
 As a batch processing framework, GoBatch's core capabilities are job orchestration and execution. Applications must first complete job orchestration through GoBatch interfaces before executing tasks.
 
@@ -30,7 +30,7 @@ GoBatch supports multiple ways to trigger job execution. Applications can trigge
 
 The execution flow of GoBatch batch processing applications is as follows:
 
-[](../images/arch.png)
+![](../images/arch.png)
 
 ## Core Components
 
@@ -77,7 +77,7 @@ For detailed information about Steps, see [Step](step.md).
    - Supports partition and listener configuration
    - Provides fluent API
 
-[](../images/builder.png)
+![](../images/builder.png)
 
 ## Execution Mechanism
 
@@ -87,14 +87,14 @@ For detailed information about Steps, see [Step](step.md).
    - Configure Step processing logic and behavior
    - Set listeners and other parameters
 
-[](../images/step_builder.png)
+![](../images/step_builder.png)
 
 2. **Job Building**
    - Create Job instances using JobBuilder
    - Add Steps and configure execution order
    - Set Job-level listeners
 
-[](../images/job_reassemble.png)
+![](../images/job_reassemble.png)
 
 3. **Registration**
    - Register Job to JobRegistry
@@ -119,7 +119,7 @@ For detailed information about Steps, see [Step](step.md).
    - Resource cleanup
    - State update
 
-[](../images/start_job.png)
+![](../images/start_job.png)
 
 ### Transaction Management
 
@@ -177,7 +177,7 @@ GoBatch records runtime states through the following objects:
    - Restart generates new StepExecution
 
 The database table relationships of these 4 objects are as follows:
-[](../images/status_record.png)
+![](../images/status_record.png)
 
 ### State Transitions
 Job and Step execution states:
@@ -189,4 +189,4 @@ Job and Step execution states:
 - FAILED: Execution failed
 - UNKNOWN: Unknown state
 
-[](../images/status_trans.png)
+![](../images/status_trans.png)

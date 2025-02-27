@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Create .nojekyll file
+        run: touch .nojekyll
+
       - name: Install and patch gitbook
         run: |
           npm install -g gitbook-cli
@@ -33,6 +36,7 @@ jobs:
       - name: Build documentation
         run: |
           gitbook build
+          cp .nojekyll _book/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -4,7 +4,7 @@
 
 ## 在线文档
 
-访问 [https://chararch.github.io/gobatch-doc](https://chararch.github.io/gobatch-doc) 查看在线文档。
+访问 [https://chararch.github.io/gobatch-doc/](https://chararch.github.io/gobatch-doc) 查看在线文档。
 
 ---
 

@@ -2,7 +2,7 @@
 
 * 中文文档
     * [简介](zh/introduction.md)
-    * [快速开始](zh/quickstart.md)
+    * [快速开始](zh/quick_start.md)
     * [基础知识](zh/basics.md)
     * [架构设计](zh/architecture.md)
     * [任务介绍](zh/job.md)
@@ -15,7 +15,7 @@
     * [问题反馈](zh/feedback.md)
 * English Documentation
     * [Introduction](en/introduction.md)
-    * [Quick Start](en/quickstart.md)
+    * [Quick Start](en/quick_start.md)
     * [Basics](en/basics.md)
     * [Architecture](en/architecture.md)
     * [Job](en/job.md)

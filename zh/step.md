@@ -26,7 +26,7 @@ GoBatch支持三种类型的步骤：
      - Partitioner：任务分区
      - Aggregator：结果聚合
 
-[](../images/step.png)
+![](../images/step.png)
 
 ## 编写简单步骤
 
@@ -266,7 +266,7 @@ type PartitionListener interface {
 ### 简单步骤执行
 简单步骤直接在当前Job线程中执行Handler中的业务逻辑。适合业务逻辑简单的场景。
 
-[](../images/exec_simple_step.png)
+![](../images/exec_simple_step.png)
 
 ### 分块处理步骤执行
 在单线程中执行以下流程：
@@ -277,7 +277,7 @@ type PartitionListener interface {
 5. 提交或回滚事务
 6. 重复以上步骤直到处理完成
 
-[](../images/exec_chunk_step.png)
+![](../images/exec_chunk_step.png)
 
 ### 分区步骤执行
 1. 使用Partitioner进行数据分区
@@ -286,6 +286,6 @@ type PartitionListener interface {
 4. 等待所有子步骤完成
 5. 使用Aggregator汇总结果
 
-[](../images/exec_partition_step.png)
+![](../images/exec_partition_step.png)
 
 如何编写Step请参考[示例1](usage_examples.md)、[示例2](file_examples.md)。
